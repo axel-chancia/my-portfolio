@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function CvCard() {
   return (
@@ -21,10 +22,13 @@ export default function CvCard() {
       {/* Colonne gauche : Photo + infos */}
       <div className="relative z-10 flex flex-col items-center md:items-start md:w-1/3 w-full mb-8 md:mb-0">
         <div className="flex flex-col items-center md:items-start">
-          <img
+          <Image
             src="/profile.jpg"
             alt="Photo de Doumba Arsel"
+            width={128}
+            height={128}
             className="w-32 h-32 rounded-full border-4 border-blue-400 shadow-2xl mb-4 bg-gray-900 object-cover"
+            priority
           />
           <h2 className="text-2xl font-bold text-blue-300 mb-2 text-center md:text-left">DOUMBA Arsel</h2>
           <p className="text-xs text-gray-300 text-center md:text-left mb-1">
@@ -50,7 +54,7 @@ export default function CvCard() {
             <li><span className="font-semibold text-blue-300">Développement Web Frontend :</span> HTML, CSS, JavaScript, Next.js, etc.</li>
             <li><span className="font-semibold text-blue-300">Cartographie :</span> Expérience terrain en recensement cartographique avec la DGS.</li>
             <li><span className="font-semibold text-blue-300">Sciences humaines :</span> Solide formation universitaire en Histoire et Archéologie.</li>
-            <li><span className="font-semibold text-blue-300">Qualités personnelles :</span> Ponctuel, dynamique, respectueux, doté d'un bon relationnel.</li>
+            <li><span className="font-semibold text-blue-300">Qualités personnelles :</span> Ponctuel, dynamique, respectueux, doté d&apos;un bon relationnel.</li>
           </ul>
         </Section>
         <Section title="Formation">
@@ -66,7 +70,7 @@ export default function CvCard() {
             <li>2024 : Licence Histoire et Archéologie - Université Omar Bongo</li>
             <li>2021 : Baccalauréat A1 - Lycée Paul INDJENDJET NGONDJOUT</li>
             <li>2017 : BEPC - Collège Louis BIGMANN</li>
-            <li>2011 : CEP - École Publique d'Angondje</li>
+            <li>2011 : CEP - École Publique d&apos;Angondje</li>
           </ul>
         </Section>
         <Section title="Expérience Professionnelle">

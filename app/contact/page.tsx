@@ -12,10 +12,6 @@ export default function Contact() {
     setLoading(true);
 
     const form = e.currentTarget;
-    const data = {
-      email: form.email.value,
-      message: form.message.value,
-    };
 
     const response = await fetch('https://formspree.io/f/mvgrobro', {
       method: 'POST',
