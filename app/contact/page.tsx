@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function Contact() {
   const [sent, setSent] = useState(false);
@@ -74,8 +75,8 @@ export default function Contact() {
           </motion.div>
         )}
         <div className="flex justify-center gap-4 mt-8">
-          <a href="mailto:amakita124@gmail.com" className="underline text-blue-300 hover:text-blue-400 transition">amakita124@gmail.com</a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="underline text-blue-300 hover:text-blue-400 transition">LinkedIn</a>
+          <Link href="mailto:amakita124@gmail.com" className="underline text-blue-300 hover:text-blue-400 transition">amakita124@gmail.com</Link>
+          <Link href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="underline text-blue-300 hover:text-blue-400 transition">LinkedIn</Link>
         </div>
       </motion.div>
     </main>

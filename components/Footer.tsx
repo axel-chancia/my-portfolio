@@ -22,7 +22,7 @@ export default function Footer() {
             <Image
               src="/logo.png" // Assurez-vous d'avoir votre logo à cet emplacement dans /public
               alt="Logo Portfolio"
-              width={50} // Taille du logo
+              width={40} // Taille du logo
               height={50}
               className="rounded-full shadow-md"
             />
@@ -51,7 +51,7 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-4 border-b border-blue-700 pb-1">Me Suivre</h3>
           <div className="flex space-x-4">
             <Link
-              href="https://linkedin.com/in/doumba-arsel" // Remplacez par votre lien LinkedIn
+              href="https://www.linkedin.com/in/fred-makita-a21635231/" // Remplacez par votre lien LinkedIn
               target="_blank" // Ouvre dans un nouvel onglet
               rel="noopener noreferrer" // Bonne pratique de sécurité
               aria-label="LinkedIn" // Améliore l'accessibilité
@@ -60,7 +60,7 @@ export default function Footer() {
               <Linkedin size={28} /> {/* Taille de l'icône */}
             </Link>
             <Link
-              href="https://github.com/votre-utilisateur-github" // Remplacez par votre lien GitHub
+              href="https://github.com/axel-chancia" // Remplacez par votre lien GitHub
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"

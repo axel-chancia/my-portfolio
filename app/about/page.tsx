@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaEnvelope, FaWhatsapp, FaPhone } from 'react-icons/fa';
 
 export default function About() {
@@ -16,14 +17,21 @@ export default function About() {
           transition={{ duration: 1.2, type: "spring" }}
           className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-48 bg-blue-500 blur-3xl rounded-full z-0"
         />
-        <motion.img
-          src="/profile.jpg"
-          alt="Photo de Doumba"
-          className="w-36 h-36 rounded-full border-4 border-blue-400 shadow-2xl relative z-10"
+        <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1, type: "spring" }}
-        />
+          className="relative z-10"
+        >
+          <Image
+            src="/Var.jpeg"
+            alt="Photo de Doumba"
+            width={144}
+            height={144}
+            className="w-36 h-36 rounded-full border-4 border-blue-400 shadow-2xl object-cover"
+            priority
+          />
+        </motion.div>
       </div>
       <motion.div
         initial={{ opacity: 0, y: 60 }}
@@ -41,7 +49,7 @@ export default function About() {
           transition={{ delay: 0.8, duration: 0.8 }}
           className="text-gray-200 text-center mb-6 leading-relaxed"
         >
-           Passionné par la création d’expériences web <span className="text-blue-400 font-bold">innovantes</span> et <span className="text-purple-400 font-bold">immersives</span>.<br />
+          Passionné par la création d’expériences web <span className="text-blue-400 font-bold">innovantes</span> et <span className="text-purple-400 font-bold">immersives</span>.<br />
           J’aime transformer des idées en interfaces élégantes et performantes.<br />
           <span className="text-blue-300 font-semibold">React, Next.js, Node.js, Tailwind CSS</span> sont mes outils de prédilection.<br />
           Toujours prêt à relever de nouveaux défis et à apprendre les dernières technologies !
@@ -49,27 +57,27 @@ export default function About() {
         <div className="flex flex-col items-center gap-2 mb-6">
           <div className="flex items-center gap-2">
             <FaEnvelope className="text-blue-400" />
-            <a
+            <Link
               href="mailto:amakita124@gmail.com"
               className="underline text-blue-200 hover:text-blue-400 transition"
             >
               amakita124@gmail.com
-            </a>
+            </Link>
           </div>
           <div className="flex items-center gap-2">
             <FaWhatsapp className="text-green-400" />
-            <a
+            <Link
               href="https://wa.me/24176516947"
               target="_blank"
               rel="noopener noreferrer"
               className="underline text-green-300 hover:text-green-400 transition"
             >
               WhatsApp : 076 516 947
-            </a>
+            </Link>
           </div>
           <div className="flex items-center gap-2">
             <FaPhone className="text-blue-300" />
-            <span className="text-blue-200">Téléphone : 060 453 551</span>
+            <span className="text-blue-200">Téléphone : 060 453 557</span>
           </div>
         </div>
         <div className="flex flex-wrap justify-center gap-4 mt-4">

@@ -6,28 +6,28 @@ import Image from 'next/image'; // N'oubliez pas d'importer Image de 'next/image
 
 const projects = [
   {
-    title: "Portfolio Moderne",
-    description: "Un portfolio personnel élégant et réactif construit avec React et Tailwind CSS, mettant en valeur mes compétences.",
+    title: "Preforma App",
+    description: "la plateforme preforma est une application web qui permet au client aussi bien chefs d'entreprise que des simples citoyens d'avoir accès au facture preforma et d'autre facilement et en plus personnalisé.",
     image: "/site 1.png", // Assurez-vous que cette image existe dans votre dossier /public
-    link: "https://votre-portfolio.com" // Remplacez par le lien réel de votre portfolio
+    link: "https://vercel.com/axel-chancias-projects/pr-forma-app" // Remplacez par le lien réel de votre portfolio
   },
   {
-    title: "Application ToDo",
-    description: "Un gestionnaire de tâches simple et efficace avec des fonctionnalités CRUD (Créer, Lire, Mettre à jour, Supprimer).",
-    image: "/project2.jpg", // Assurez-vous que cette image existe dans votre dossier /public
-    link: "https://votre-todo-app.com" // Remplacez par le lien réel de votre application ToDo
+    title: "Application primeprompts",
+    description: "Le site Primeprompts est une application web conçue pour faciliter la gestion de vos prompts d'intelligence artificielle.",
+    image: "/prompt.png", // Assurez-vous que cette image existe dans votre dossier /public
+    link: "https://vercel.com/axel-chancias-projects/my-primeprompts" // Remplacez par le lien réel de votre application ToDo
   },
   {
-    title: "Site E-commerce (Maquette)",
-    description: "Maquette d'un site e-commerce responsive, avec une interface utilisateur intuitive pour la navigation produit.",
+    title: "palace-club",
+    description: "Palace-club est un site de réservation des logements et de maisons de vacance pour tous le monde.",
     image: "/site 2.png", // Assurez-vous d'ajouter cette image dans votre dossier /public
-    link: "https://votre-ecommerce-maquette.com" // Remplacez par un lien réel ou "#"
+    link: "https://vercel.com/axel-chancias-projects/palace-club" // Remplacez par un lien réel ou "#"
   },
   {
-    title: "Blog Personnel",
+    title: "Xori Group",
     description: "Développement d'un blog dynamique avec des articles, catégories et un système de commentaires.",
-    image: "/project4.jpg", // Assurez-vous d'ajouter cette image dans votre dossier /public
-    link: "https://votre-blog-personnel.com" // Remplacez par un lien réel ou "#"
+    image: "/xori.png", // Assurez-vous d'ajouter cette image dans votre dossier /public
+    link: "https://xori-group.vercel.app/" // Remplacez par un lien réel ou "#"
   },
 ];
 

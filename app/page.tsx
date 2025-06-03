@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center py-30 min-h-screen bg-gray-900 text-white">
       <Image
-        src="/profile.jpg"
+        src="/Var.jpeg"
         alt="Photo de profil"
         width={128}
         height={128}
