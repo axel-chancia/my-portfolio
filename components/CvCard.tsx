@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaUserTie, FaCode, FaMap, FaGraduationCap, FaBriefcase } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaUserTie, FaCode,  FaGraduationCap, FaBriefcase } from 'react-icons/fa';
 
 export default function CvCard() {
   // Particules lumineuses fixes
