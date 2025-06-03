@@ -8,7 +8,7 @@ const projects = [
   {
     title: "Portfolio Moderne",
     description: "Un portfolio personnel élégant et réactif construit avec React et Tailwind CSS, mettant en valeur mes compétences.",
-    image: "/project1.jpg", // Assurez-vous que cette image existe dans votre dossier /public
+    image: "/site 1.png", // Assurez-vous que cette image existe dans votre dossier /public
     link: "https://votre-portfolio.com" // Remplacez par le lien réel de votre portfolio
   },
   {
@@ -20,7 +20,7 @@ const projects = [
   {
     title: "Site E-commerce (Maquette)",
     description: "Maquette d'un site e-commerce responsive, avec une interface utilisateur intuitive pour la navigation produit.",
-    image: "/project3.jpg", // Assurez-vous d'ajouter cette image dans votre dossier /public
+    image: "/site 2.png", // Assurez-vous d'ajouter cette image dans votre dossier /public
     link: "https://votre-ecommerce-maquette.com" // Remplacez par un lien réel ou "#"
   },
   {

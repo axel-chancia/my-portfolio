@@ -2,10 +2,12 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { FaEnvelope, FaWhatsapp, FaPhone } from 'react-icons/fa';
 
 export default function About() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-black text-white px-4">
+    <main className="flex flex-col items-center justify-center py-40 min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-black text-white px-4">
       {/* Effet de halo lumineux derrière la photo */}
       <div className="relative flex flex-col items-center">
         <motion.div
@@ -39,14 +41,50 @@ export default function About() {
           transition={{ delay: 0.8, duration: 0.8 }}
           className="text-gray-200 text-center mb-6 leading-relaxed"
         >
-          🚀 Passionné par la création d’expériences web <span className="text-blue-400 font-bold">innovantes</span> et <span className="text-purple-400 font-bold">immersives</span>.<br />
+           Passionné par la création d’expériences web <span className="text-blue-400 font-bold">innovantes</span> et <span className="text-purple-400 font-bold">immersives</span>.<br />
           J’aime transformer des idées en interfaces élégantes et performantes.<br />
           <span className="text-blue-300 font-semibold">React, Next.js, Node.js, Tailwind CSS</span> sont mes outils de prédilection.<br />
           Toujours prêt à relever de nouveaux défis et à apprendre les dernières technologies !
         </motion.p>
+        <div className="flex flex-col items-center gap-2 mb-6">
+          <div className="flex items-center gap-2">
+            <FaEnvelope className="text-blue-400" />
+            <a
+              href="mailto:amakita124@gmail.com"
+              className="underline text-blue-200 hover:text-blue-400 transition"
+            >
+              amakita124@gmail.com
+            </a>
+          </div>
+          <div className="flex items-center gap-2">
+            <FaWhatsapp className="text-green-400" />
+            <a
+              href="https://wa.me/24176516947"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-green-300 hover:text-green-400 transition"
+            >
+              WhatsApp : 076 516 947
+            </a>
+          </div>
+          <div className="flex items-center gap-2">
+            <FaPhone className="text-blue-300" />
+            <span className="text-blue-200">Téléphone : 060 453 551</span>
+          </div>
+        </div>
         <div className="flex flex-wrap justify-center gap-4 mt-4">
-          <a href="mailto:amakita124@gmail.com" className="bg-gradient-to-r from-blue-500 to-purple-500 px-6 py-2 rounded-full font-bold shadow-lg hover:scale-105 transition-transform">Me contacter</a>
-          <a href="/projects" className="bg-gray-700 px-6 py-2 rounded-full font-bold shadow-lg hover:bg-gray-600 transition">Voir mes projets</a>
+          <Link
+            href="/contact"
+            className="bg-gradient-to-r from-blue-500 to-purple-500 px-6 py-2 rounded-full font-bold shadow-lg hover:scale-105 transition-transform"
+          >
+            Me contacter
+          </Link>
+          <Link
+            href="/projects"
+            className="bg-gray-700 px-6 py-2 rounded-full font-bold shadow-lg hover:bg-gray-600 transition"
+          >
+            Voir mes projets
+          </Link>
         </div>
       </motion.div>
     </main>
